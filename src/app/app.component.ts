@@ -48,27 +48,14 @@ export class AppComponent {
     this.secondNumber = Number(value);
   }
 
-  calculate(a: Number, b: Number) {
-    switch (this.operatorChosen) {
-      case '*':
-        return Number(a) * Number(b);
-        break;
-
-      case '+':
-        return Number(a) + Number(b);
-        break;
-
-      case '-':
-        return Number(a) - Number(b);
-        break;
-
-      case '/':
-        return Number(a) / Number(b);
-        break;
-      default:
-        return 6;
-        break;
-    }
+  getFirstNumber(){
+    return this.firstNumber;
+  }
+  getSecondNumber(){
+    return this.secondNumber;
+  }
+  getOperator(){
+    return this.operatorChosen;
   }
 
   changeUI(){

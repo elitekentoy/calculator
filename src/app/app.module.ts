@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NumbersComponent } from './numbers/numbers.component';
 import { OperationComponent } from './operation/operation.component';
 import { ResultComponent } from './result/result.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ResultComponent } from './result/result.component';
     ResultComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

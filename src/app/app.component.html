@@ -20,8 +20,10 @@
     >
     </app-operation>
   </div>
+  <app-result
+  [fNumber] = "getFirstNumber()"
+  [sNumber] = "getSecondNumber()"
+  [operator] = "getOperator()"
+  ></app-result>
 
-  <div *ngIf="this.operatorChosen != ''" class="mt-5">
-    <app-result [result]="calculate(firstNumber, secondNumber)"></app-result>
-  </div>
 </div>
